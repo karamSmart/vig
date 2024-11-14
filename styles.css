@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3e5f5; /* خلفية أرجوانية فاتحة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: #ffffff; /* خلفية بيضاء للتطبيق */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+h1 {
+    color: #1e88e5; /* لون أزرق مميز */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.category {
+    margin-bottom: 15px;
+    
+}
+.category h3 {
+    background-color: #1e88e5; /* أزرق داكن */
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0;
+    transition: background-color 0.3s ease;
+}
+.category h3:hover {
+    background-color: #1565c0; /* أزرق أغمق */
+}
+.items {
+    list-style: none;
+    padding: 0;
+    background-color: #d1c4e9; /* لون أرجواني فاتح */
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+.items.visible {
+    max-height: 200px; /* تعديل ارتفاع القائمة حسب الحاجة */
+}
+.items li {
+    background-color: #7e57c2; /* لون أرجواني أغمق */
+    padding: 10px;
+    border-bottom: 1px solid #9e9e9e;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+.items li:last-child {
+    border-bottom: none;
+}
+.items li:hover {
+    background-color: #5e35b1; /* لون أرجواني أفتح */
+}
+.selected-items {
+    margin-top: 20px;
+}
+.selected-items div {
+    padding: 10px;
+    background-color: #f3e5f5; /* خلفية أرجوانية فاتحة */
+    border-radius: 5px;
+}
+.selected-items div .item-container {
+    margin-bottom: 10px;
+    position: relative;
+    padding-right: 30px;
+}
+.selected-items div .item-container textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.selected-items div .remove-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 18px;
+}

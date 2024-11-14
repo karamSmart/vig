@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لائحة المشتريات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>لائحة المشتريات</h1>
+
+        <div class="category">
+            <h3 onclick="toggleItems(this)">خضار</h3>
+            <ul class="items">
+                <li onclick="selectItem(this)">طماطم</li>
+                <li onclick="selectItem(this)">خيار</li>
+                <li onclick="selectItem(this)">بطاطا</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3 onclick="toggleItems(this)">بقالة</h3>
+            <ul class="items">
+                <li onclick="selectItem(this)">أرز</li>
+                <li onclick="selectItem(this)">سكر</li>
+                <li onclick="selectItem(this)">شاي</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3 onclick="toggleItems(this)">مواد تنظيف</h3>
+            <ul class="items">
+                <li onclick="selectItem(this)">صابون</li>
+                <li onclick="selectItem(this)">مطهر</li>
+                <li onclick="selectItem(this)">ممسحة</li>
+            </ul>
+        </div>
+
+        <div class="selected-items">
+            <h2>العناصر المختارة</h2>
+            <div id="selected-items-container">
+                <!-- العناصر المختارة ستظهر هنا -->
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
